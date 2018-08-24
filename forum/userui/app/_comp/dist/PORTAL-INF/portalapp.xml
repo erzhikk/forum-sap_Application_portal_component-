@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <!--THIS FILE IS A COPY OF THE ORIGINAL VERSION STORED IN THE PCD. PLEASE DO NOT CHANGE IT!-->
+  <application-config>
+    <property name="SharingReference" value="SAPJ2EE::library:mail,kz.ecc.portal.util, usermanagement, knowledgemanagement, landscape, htmlb, exportalJCOclient, exportal"/>
+  </application-config>
+  <components>
+    <component name="FORUM_USER_SIDE_0002">
+      <component-config>
+        <property name="ClassName" value="kz.ecc.controller.MainpageController"/>
+      </component-config>
+      <component-profile>
+        <property name="SMTP_HOST" value="10.58.56.200"/>
+        <property name="SMTP_PORT" value="25"/>
+        <property name="EMAIL_RECIPIENT" value="z.sharipova@ecc.kz"/>
+        <property name="EMAIL_SENDER" value="devep@minfin.kz"/>
+      </component-profile>
+    </component>
+  </components>
+  <services/>
+</application>

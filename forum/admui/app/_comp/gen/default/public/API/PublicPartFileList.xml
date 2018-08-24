@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content version="4">
+  <metadata>
+    <development-component>
+      <name>mf/forum/admui/app</name>
+      <vendor>ecc.kz</vendor>
+      <component-type>
+        <vendor>sap.com</vendor>
+        <type>Enterprise Portal</type>
+        <sub-type>Portal Application Standalone</sub-type>
+      </component-type>
+    </development-component>
+    <public-part>
+      <name>API</name>
+      <purpose>compilation</purpose>
+    </public-part>
+    <dependencies>
+      <dependency>
+        <dc-ref>
+          <name>webservices_lib</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>J2EE Server Component</type>
+            <sub-type>Library</sub-type>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>sapxmltoolkit</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>J2EE Server Component</type>
+            <sub-type>Library</sub-type>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>com.sapportals.htmlb</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>J2EE Server Component</type>
+            <sub-type>Library</sub-type>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>epbc.prtapi._api</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>Java</type>
+            <sub-type/>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>epbc.prtpars._htmlb</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>Java</type>
+            <sub-type/>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>epbc.prtpars._soap</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>Java</type>
+            <sub-type/>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>epbc.prtapi._test</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>Java</type>
+            <sub-type/>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>servlet</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>J2EE Server Component</type>
+            <sub-type>Library</sub-type>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>jaxm</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>Java</type>
+            <sub-type/>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+      <dependency>
+        <dc-ref>
+          <name>mail</name>
+          <vendor>sap.com</vendor>
+          <component-type>
+            <vendor>sap.com</vendor>
+            <type>J2EE Server Component</type>
+            <sub-type>Library</sub-type>
+          </component-type>
+        </dc-ref>
+        <pp-ref purpose="compilation">default</pp-ref>
+        <at-build-time/>
+      </dependency>
+    </dependencies>
+  </metadata>
+  <source-components/>
+  <archives/>
+  <entities>
+    <entity>
+      <name>Portal API</name>
+      <package>
+      </package>
+      <entity-type>Portal API</entity-type>
+      <entity-sub-type>
+      </entity-sub-type>
+    </entity>
+  </entities>
+</content>

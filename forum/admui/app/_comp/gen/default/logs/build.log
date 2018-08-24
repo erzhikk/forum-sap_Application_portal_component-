@@ -1,0 +1,187 @@
+Development Component Build (2018-08-16 10:01:50)
+  Component name: mf/forum/admui/app
+  Component vendor: ecc.kz
+  SC compartment: ecc.kz_FORUM_1
+  Configuration: MSD_ecc_D
+  Location: MSD_ecc_D
+  Source code location: http://sm:56000/dtr/ws/ecc/ecc.kz_FORUM/dev/inactive/DCs/ecc.kz/mf/forum/admui/app/_comp/
+  DC root folder: C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\
+  DC type: Enterprise Portal
+  DC subtype: Portal Application Standalone
+  Host: hw0012
+
+DC Model check:
+   All used DCs are available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/portalapplication"
+   validating dependency to  public part "default" of DC "sap.com/webservices_lib"
+   validating dependency to  public part "default" of DC "sap.com/sapxmltoolkit"
+   validating dependency to  public part "default" of DC "sap.com/com.sapportals.htmlb"
+   validating dependency to  public part "default" of DC "sap.com/epbc.prtapi._api"
+   validating dependency to  public part "default" of DC "sap.com/epbc.prtpars._htmlb"
+   validating dependency to  public part "default" of DC "sap.com/epbc.prtpars._soap"
+   validating dependency to  public part "default" of DC "sap.com/epbc.prtapi._test"
+   validating dependency to  public part "default" of DC "sap.com/servlet"
+   validating dependency to  public part "default" of DC "sap.com/jaxm"
+   validating dependency to used DC "sap.com/mail"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/portalapplication
+   starting build plugin from : C:\Users\mesh\.dtc\0\DCs\sap.com\tc\bi\bp\portalapplication\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'PortalAppPlugin', Version 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:28 +0100, CL51581)
+   development component:  mf/forum/admui/app (ecc.kz)
+      software component:  FORUM (ecc.kz)
+                location:  MSD_ecc_D
+                    type:  Enterprise Portal, subtype Portal Application Standalone
+           build variant:  default
+         output location:  C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\gen\default
+       generation folder:  C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54
+       plugin start time:  2018-08-16 10:01:50 GMT+06:00 (BDT)
+                 Java VM:  Java HotSpot(TM) Client VM, 1.4.2_19-b04 (Sun Microsystems Inc.)
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+
+Warning: Package folder "src.api" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0.021 seconds
+
+Preparing data context..
+No public part descriptor found for component "webservices_lib" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "sapxmltoolkit" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "com.sapportals.htmlb" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "epbc.prtapi._api" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "epbc.prtpars._htmlb" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "epbc.prtpars._soap" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "epbc.prtapi._test" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "servlet" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "jaxm" (vendor "sap.com"), public part "default", using legacy mode.
+No public part descriptor found for component "mail" (vendor "sap.com"), public part "default", using legacy mode.
+No 'default' JDK defined, will use running VM.
+Data context preparation finished in 0.07 seconds
+
+Creating Ant build file..
+  Creating output file: C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\gen\default\logs\build.xml
+  [Velocity] Error: VM #CreateConfigArchive: error : too few arguments to macro. Wanted 3 got 0
+  Using macro file:     C:\Users\mesh\.dtc\0\DCs\sap.com\tc\bi\bp\portalapplication\_comp\gen\default\public\def\macros\build.vm
+DC specific options:
+  Portal Application file name:   kz.ecc.admui.app.par
+  Include sources in application: no
+  Deploy type:                    online
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Warning: Internal warning: IComponentDependency#getPublicPartPurpose(String) should no longer be used.
+Build file creation finished in 0.1 seconds
+
+Starting Ant..
+  Using build file:     C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\gen\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.6.2
+
+compile:
+      [echo] Compiling Java sources in src.core
+      [echo] Starting Java compiler
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\src.core
+      [echo]    class path:
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._htmlb\_comp\gen\default\public\default\lib\java\com.sap.portal.htmlb_api.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtapi._api\_comp\gen\default\public\default\lib\java\prtapi.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\servlet\_comp\gen\default\public\default\lib\java\servlet.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\sapxmltoolkit\_comp\gen\default\public\default\lib\java\sapxmltoolkit.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\com.sapportals.htmlb\_comp\gen\default\public\default\lib\java\htmlb.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtapi._test\_comp\gen\default\public\default\lib\java\prttest.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\jaxm\_comp\gen\default\public\default\lib\java\jaxm-api.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\jaxm\_comp\gen\default\public\default\lib\java\saaj-api.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\boot.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\iq-lib.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\tc_sec_wssec_lib.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\util.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\webservices_lib.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._soap\_comp\gen\default\public\default\lib\java\com.sap.portal.runtime.application.soap_api.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._soap\_comp\gen\default\public\default\lib\java\com.sap.portal.runtime.application.soap_core.jar
+      [echo]       C:\Users\mesh\.dtc\0\DCs\sap.com\mail\_comp\gen\default\public\default\lib\java\mail.jar
+      [echo]    output dir: C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\classes\src.core
+     [javac] Compiling 3 source files to C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\classes\src.core
+     [timer] Java compilation finished in 0.356 seconds
+
+      [echo] Start XLF conversion
+     [timer] XLF conversion finished in 0.002 seconds
+
+  [pppacker] WARNING: Could not determine correct package of package folder for entity  (portalapplication-api/Class, src.api/)
+  [pppacker] Packed   0 files for entity  (portalapplication-api/Class, src.api/)
+  [pppacker] Packed   6 files for entity  (portalapplication-core/Class, src.core/)
+     [timer] Portal Application libraries packaging finished in 0.069 seconds
+
+
+createApplication:
+      [echo] create PAR..
+       [jar] Building jar: C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\kz.ecc.admui.app.par
+
+createPublicParts:
+      [echo] Public Part: API
+  [pppacker] Packing public part 'API'
+  [pppacker] Packed   0 files for entity Portal API (Portal API)
+  [pppacker] Packed 1 entity for public part 'API'
+     [timer] Public part packaging finished in 0.025 seconds
+
+
+createDeployArchive:
+      [echo] Creating portalapp-dd.xml
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "J2EE"
+       [cda]   explicit modules:
+       [cda]     C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\kz.ecc.admui.app.par
+       [cda] 
+       [cda] Creating Ant build file: C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\gen\default\logs\buildDeployArchive.xml
+       [cda] 
+       [cda]  
+       [cda] Creating descriptor META-INF/application.xml ...
+       [cda]  
+       [cda] Creating descriptor META-INF/application-j2ee-engine.xml ...
+       [cda] Adding module "kz.ecc.admui.app.par" with container type "PortalRuntimeContainer".
+       [cda]  
+       [cda] Collecting modules...
+       [cda] Adding module 'kz.ecc.admui.app.par' from current development component
+       [cda] Ant build file creation finished in 0.016 seconds
+
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.001 seconds
+
+    [dcinfo] Creating deploy archive info
+    [jarsap] Info: JarSAP version 20060908.1630
+    [jarsap] Info: JarSAPProcessing version 20070423.1630 / JarSL version 20071113.1400
+    [jarsap] Building: C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\gen\default\deploy\ecc.kz~mf~forum~admui~app.sda with compression
+     [timer] JarSAP finished in 0.035 seconds
+
+
+Ant runtime 0.768 seconds
+
+Ant build finished with WARNINGS
+
+Checking package reservation
+Warning: Package kz.ecc.controller is not reserved for DC : mf/forum/admui/app.
+Package reservation check finished in 0.002 seconds
+
+Build plugin finished at 2018-08-16 10:01:52 GMT+06:00 (BDT)
+Total build plugin runtime: 1.105 seconds
+
+Build finished with WARNING

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/servlet/_comp/gen/default/public/default/lib/java/servlet.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/mail/_comp/gen/default/public/default/lib/java/mail.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/com.sapportals.htmlb/_comp/gen/default/public/default/lib/java/htmlb.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/sapxmltoolkit/_comp/gen/default/public/default/lib/java/sapxmltoolkit.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/epbc.prtapi._api/_comp/gen/default/public/default/lib/java/prtapi.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/jaxm/_comp/gen/default/public/default/lib/java/jaxm-api.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/jaxm/_comp/gen/default/public/default/lib/java/saaj-api.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/epbc.prtpars._soap/_comp/gen/default/public/default/lib/java/com.sap.portal.runtime.application.soap_api.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/epbc.prtpars._soap/_comp/gen/default/public/default/lib/java/com.sap.portal.runtime.application.soap_core.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/epbc.prtpars._htmlb/_comp/gen/default/public/default/lib/java/com.sap.portal.htmlb_api.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/epbc.prtapi._test/_comp/gen/default/public/default/lib/java/prttest.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/webservices_lib/_comp/gen/default/public/default/lib/java/boot.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/webservices_lib/_comp/gen/default/public/default/lib/java/iq-lib.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/webservices_lib/_comp/gen/default/public/default/lib/java/tc_sec_wssec_lib.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/webservices_lib/_comp/gen/default/public/default/lib/java/util.jar"/>
+    <classpathentry kind="lib" path="C:/Users/mesh/.dtc/0/DCs/sap.com/webservices_lib/_comp/gen/default/public/default/lib/java/webservices_lib.jar"/>
+    <classpathentry kind="src" path="src.api"/>
+    <classpathentry kind="src" path="src.core"/>
+    <classpathentry kind="output" path="test"/>
+</classpath>

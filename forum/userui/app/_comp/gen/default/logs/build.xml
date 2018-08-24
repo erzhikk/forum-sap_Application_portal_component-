@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    development component
+                     name: mf/forum/userui/app
+                   vendor: ecc.kz
+                     type: Enterprise Portal
+                 sub-type: Portal Application Standalone
+              type-vendor: sap.com
+
+       software component
+                     name: FORUM
+                   vendor: ecc.kz
+
+                 location: MSD_ecc_D
+          source location: mesh@hw0012
+            build variant: default
+
+    building on hw0012, Windows Vista/x86, version 6.1
+    using Java VM 'Java HotSpot(TM) Client VM', version 1.4.2_19-b04 (Sun Microsystems Inc.)
+    build started at 2018-08-16 15:45:14 GMT+06:00 (BDT)
+
+    Build Plugin 'PortalAppPlugin', Version 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:28 +0100, CL51581)
+    detailed versions:
+    sap.com:tc/bi/ant#ant                  7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:28 CET, CL51263)
+    sap.com:tc/bi/anttasks#def             7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:30 CET, CL51263)
+    sap.com:tc/bi/bp/portalapplication#def 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:28 +0100, CL51581)
+    sap.com:tc/bi/core#def                 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:03 CET, CL51263)
+    sap.com:tc/bi/eptech#def               7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:30 +0100, CL51581)
+    sap.com:tc/bi/exception#def            7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:33 CET, CL51263)
+    sap.com:tc/bi/extddicdb#def            7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:35 CET, CL51263)
+    sap.com:tc/bi/extsql#def               7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:34 CET, CL51263)
+    sap.com:tc/bi/framework#def            7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:27:57 CET, CL51263)
+    sap.com:tc/bi/i18n#def                 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:32 CET, CL51263)
+    sap.com:tc/bi/javatech#def             7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:28:14 CET, CL51263)
+    sap.com:tc/bi/jlincbs#def              7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:41 CET, CL51263)
+    sap.com:tc/bi/jtools#def               7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:42 CET, CL51263)
+    sap.com:tc/bi/settings#version         7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:28:49 CET, CL51263)
+    sap.com:tc/bi/util#util                7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:28:05 CET, CL51263)
+    sap.com:tc/bi/velocity#def             7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:28 CET, CL51263)
+    sap.com:tc/bi/xml#def                  7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:31 CET, CL51263)
+-->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="sdadd" classname="com.sap.tools.ant.taskdefs.SdaDDTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<taskdef name="xlf2prop" classname="com.sap.tc.buildplugin.util.XlfConverter"/>
+<!-- DC properties: -->
+            <!-- Name: localization , ns: http://xml.sap.com/2003/06/Localization , value:  -->
+            <!-- Name: par-archive-name , ns: http://xml.sap.com/2004/06/PortalPlatform , value: kz.ecc.userui.app -->
+            <!-- Name: sda-type , ns: http://xml.sap.com/2004/06/PortalPlatform , value: EAR -->
+            <!-- Name: package-sources , ns: http://xml.sap.com/2004/06/PortalPlatform , value: false -->
+                <!-- portal properties: {sda-type=EAR, package-sources=false, par-archive-name=kz.ecc.userui.app} -->
+
+<target name="build" depends="prepare,compile,createApplication,createPublicParts,createDeployArchive">
+
+</target>
+
+<target name="prepare">
+<mkdir dir="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\PAR"/>
+</target>
+
+<target name="compile">
+<!-- src.api is defined in dependency chain, but does not exist as package dir. -->
+<!-- src.core -->
+<echo message="Compiling Java sources in src.core"/>
+<mkdir dir="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\classes\src.core"/>
+<!-- begin generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- No *.sqlj files found, skipping SQLJ preprocessing. -->
+<!-- end generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- begin generator id 'sap.com~javac', type 'sap.com~javac' -->
+<echo message="Starting Java compiler"/>
+<timer/>
+<echo message="Settings:"/>
+<echo message="        debug: on"/>
+<echo message="     optimize: off"/>
+<echo message="  deprecation: default"/>
+<echo message="      verbose: default"/>
+<echo message="     encoding: UTF8"/>
+<echo message="       source: default"/>
+<echo message="       target: default"/>
+<echo message="  source path: C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\userui\app\_comp\src.core"/>
+<echo message="   class path:"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._htmlb\_comp\gen\default\public\default\lib\java\com.sap.portal.htmlb_api.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtapi._api\_comp\gen\default\public\default\lib\java\prtapi.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\servlet\_comp\gen\default\public\default\lib\java\servlet.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\sapxmltoolkit\_comp\gen\default\public\default\lib\java\sapxmltoolkit.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\com.sapportals.htmlb\_comp\gen\default\public\default\lib\java\htmlb.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtapi._test\_comp\gen\default\public\default\lib\java\prttest.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\jaxm\_comp\gen\default\public\default\lib\java\jaxm-api.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\jaxm\_comp\gen\default\public\default\lib\java\saaj-api.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\boot.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\iq-lib.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\tc_sec_wssec_lib.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\util.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\webservices_lib.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\com.sap.security.api.sda\_comp\gen\default\public\default\lib\java\com.sap.security.api.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\com.sap.security.api.sda\_comp\gen\default\public\default\lib\java\com.sap.security.api.perm.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._soap\_comp\gen\default\public\default\lib\java\com.sap.portal.runtime.application.soap_api.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._soap\_comp\gen\default\public\default\lib\java\com.sap.portal.runtime.application.soap_core.jar"/>
+<echo message="      C:\Users\mesh\.dtc\0\DCs\sap.com\mail\_comp\gen\default\public\default\lib\java\mail.jar"/>
+<echo message="   output dir: C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\classes\src.core"/>
+<javac includeAntRuntime="no"
+       destdir="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\classes\src.core"
+       encoding="UTF8"
+       deprecation="false"
+       debug="on">
+<src path="C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\userui\app\_comp\src.core"/>
+<include name="**/*.java"/>
+<classpath>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._htmlb\_comp\gen\default\public\default\lib\java\com.sap.portal.htmlb_api.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtapi._api\_comp\gen\default\public\default\lib\java\prtapi.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\servlet\_comp\gen\default\public\default\lib\java\servlet.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\sapxmltoolkit\_comp\gen\default\public\default\lib\java\sapxmltoolkit.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\com.sapportals.htmlb\_comp\gen\default\public\default\lib\java\htmlb.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtapi._test\_comp\gen\default\public\default\lib\java\prttest.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\jaxm\_comp\gen\default\public\default\lib\java\jaxm-api.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\jaxm\_comp\gen\default\public\default\lib\java\saaj-api.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\boot.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\iq-lib.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\tc_sec_wssec_lib.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\util.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\webservices_lib\_comp\gen\default\public\default\lib\java\webservices_lib.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\com.sap.security.api.sda\_comp\gen\default\public\default\lib\java\com.sap.security.api.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\com.sap.security.api.sda\_comp\gen\default\public\default\lib\java\com.sap.security.api.perm.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._soap\_comp\gen\default\public\default\lib\java\com.sap.portal.runtime.application.soap_api.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\epbc.prtpars._soap\_comp\gen\default\public\default\lib\java\com.sap.portal.runtime.application.soap_core.jar"/>
+<pathelement location="C:\Users\mesh\.dtc\0\DCs\sap.com\mail\_comp\gen\default\public\default\lib\java\mail.jar"/>
+</classpath>
+</javac>
+<timer message="Java compilation finished in "/>
+<!-- end generator id 'sap.com~javac', type 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~jlin' for generator id 'sap.com~javac' -->
+<!-- end generator extension type 'sap.com~jlin' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- No *.sqlj files found, skipping SQLJ post-processing. -->
+<!-- end generator extension type 'sap.com~sqlj' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~jdo' for generator id 'sap.com~javac' -->
+<!-- No *.jdo files found, skipping JDO enhancer. -->
+<!-- end generator extension type 'sap.com~jdo' for generator id 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~xlf2prop' for generator id 'sap.com~javac' -->
+<echo message="Start XLF conversion"/>
+<timer/>
+<xlf2prop todir="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\classes\src.core">
+<fileset dir="C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\userui\app\_comp\src.core"/>
+</xlf2prop>
+<timer message="XLF conversion finished in "/>
+<!-- end generator extension type 'sap.com~xlf2prop' for generator id 'sap.com~javac' -->
+
+            
+        <timer/>
+<pppacker ppname="Portal Application libraries"
+          internal="true"
+          purpose="internal-only"
+          root="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\PAR">
+            <packer location="lib.api" type="jar">
+            <property key="path" value="PORTAL-INF/lib/api.jar"/>
+            <property key="manifest" value="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\MANIFEST.MF"/>
+            </packer>
+            <packer location="lib.core" type="jar">
+            <property key="path" value="PORTAL-INF/private/lib/core.jar"/>
+            <property key="manifest" value="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\MANIFEST.MF"/>
+            </packer>
+    	        	    
+            <entityhandler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteJavaPackageTree">
+                <entitytype type="portalapplication-api" subtype="Class"/>
+        		                <property key="class-destination"  value="lib.api"/>
+            </entityhandler>
+
+            <entityhandler classname="com.sap.tc.buildplugin.pp.entity.EHAbsoluteJavaPackageTree">
+                <entitytype type="portalapplication-core" subtype="Class"/>
+        		                <property key="class-destination"  value="lib.core"/>
+            </entityhandler>
+
+            <entity type="portalapplication-api"  subtype="Class" package="src.api"/>
+            <entity type="portalapplication-core" subtype="Class" package="src.core"/>
+            </pppacker>
+<timer message="Portal Application libraries packaging finished in "/>
+</target>
+
+<target name="createApplication">
+<echo message="create PAR.."/>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            	<jar jarfile="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76/kz.ecc.userui.app.par" manifest="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\MANIFEST.MF" duplicate="preserve">
+		                <fileset dir="C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\userui\app\_comp//dist">
+                <include name="**" />
+            </fileset>
+					    		                <fileset dir="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76\PAR">
+                <include name="PORTAL-INF/**" />
+            </fileset>
+            </jar>
+</target>
+
+<target name="createPublicParts">
+<!-- Public Part: API -->
+			<echo message="Public Part: API"/>
+
+                <timer/>
+<pppacker ppname="API">
+
+                <packer location="par" type="filesystem">
+                    <property key="attributes" value="SAP-J2EE-Module[container-type[PortalRuntimeContainer]]"/>
+                </packer>
+                <entityhandler classname="com.sap.tc.buildplugin.pp.entity.EHDeployArchive">
+                    <entitytype type="PAR"/>
+                    <property key="packer-location" value="par"/>
+                    <property key="path" value="portal/kz.ecc.userui.app.par"/>
+                    <property key="file" value="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76/kz.ecc.userui.app.par"/>
+                </entityhandler>
+                </pppacker>
+<timer message="Public part packaging finished in "/>
+</target>
+
+<target name="createDeployArchive">
+<echo message="Creating portalapp-dd.xml"/>
+                                <sdadd file="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76/portalapp-dd.xml"
+       softwaretype="J2EE"
+       descriptortype="engine">
+<SubstitutionVariable name="com.sap.sld.GatewayHost"/>
+<SubstitutionVariable name="com.sap.sld.GatewayService"/>
+</sdadd>
+
+            
+                                                    <cda type="sap.com~j2ee.EAR_SDA" deployfile="C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\userui\app\_comp\gen\default\deploy/ecc.kz~mf~forum~userui~app.sda">
+<descriptor type="sda-deployment-descriptor" file="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76/portalapp-dd.xml"/>
+
+                <module file="C:\Users\mesh\.dtc\0\t\51F0D9E77831DD6B95F47B5E68A7AB76/kz.ecc.userui.app.par" attributes="SAP-J2EE-Module[container-type[PortalRuntimeContainer]]"/>
+                                </cda>
+</target>
+</project>

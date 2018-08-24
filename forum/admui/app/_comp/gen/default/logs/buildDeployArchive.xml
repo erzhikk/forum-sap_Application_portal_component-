@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    development component
+                     name: mf/forum/admui/app
+                   vendor: ecc.kz
+                     type: Enterprise Portal
+                 sub-type: Portal Application Standalone
+              type-vendor: sap.com
+
+       software component
+                     name: FORUM
+                   vendor: ecc.kz
+
+                 location: MSD_ecc_D
+          source location: mesh@hw0012
+            build variant: default
+
+    building on hw0012, Windows Vista/x86, version 6.1
+    using Java VM 'Java HotSpot(TM) Client VM', version 1.4.2_19-b04 (Sun Microsystems Inc.)
+    build started at 2018-08-16 10:01:51 GMT+06:00 (BDT)
+
+    Build Plugin 'PortalAppPlugin', Version 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:28 +0100, CL51581)
+    detailed versions:
+    sap.com:tc/bi/ant#ant                  7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:28 CET, CL51263)
+    sap.com:tc/bi/anttasks#def             7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:30 CET, CL51263)
+    sap.com:tc/bi/bp/portalapplication#def 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:28 +0100, CL51581)
+    sap.com:tc/bi/core#def                 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:03 CET, CL51263)
+    sap.com:tc/bi/eptech#def               7.00 SP 3 (NW701_03_REL, built on 2008-12-07 19:42:30 +0100, CL51581)
+    sap.com:tc/bi/exception#def            7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:33 CET, CL51263)
+    sap.com:tc/bi/extddicdb#def            7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:35 CET, CL51263)
+    sap.com:tc/bi/extsql#def               7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:34 CET, CL51263)
+    sap.com:tc/bi/framework#def            7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:27:57 CET, CL51263)
+    sap.com:tc/bi/i18n#def                 7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:32 CET, CL51263)
+    sap.com:tc/bi/javatech#def             7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:28:14 CET, CL51263)
+    sap.com:tc/bi/jlincbs#def              7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:41 CET, CL51263)
+    sap.com:tc/bi/jtools#def               7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:42 CET, CL51263)
+    sap.com:tc/bi/settings#version         7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:28:49 CET, CL51263)
+    sap.com:tc/bi/util#util                7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:28:05 CET, CL51263)
+    sap.com:tc/bi/velocity#def             7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:28 CET, CL51263)
+    sap.com:tc/bi/xml#def                  7.00 SP 3 (NW701_03_REL, built on 2008-12-07 15:29:31 CET, CL51263)
+-->
+<project name="DC Deploy build"
+         default="packDeployArchive"
+         basedir=".">
+<taskdef name="dcinfo" classname="com.sap.tc.buildplugin.pp.ant.DeployArchiveInfoTask"/>
+<taskdef name="jarsap" classname="com.sap.sdm.ant.JarSAP"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="srcpacker" classname="com.sap.tc.buildplugin.pp.ant.SourceArchiveCreatorTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<property name="dtr-workspace" value="mesh@hw0012"/>
+
+<target name="packDeployArchive">
+<timer/>
+<srcpacker destination="C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\sda\src.zip" archiveLocation="srcarchive"/>
+<timer message="Source archive creation finished in "/>
+<dcinfo destination="C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\sda\META-INF\dcbuildinfo.xml"/>
+<timer/>
+<jarsap jarfile="C:\Users\mesh\.dtc\0\DCs\ecc.kz\mf\forum\admui\app\_comp\gen\default\deploy\ecc.kz~mf~forum~admui~app.sda" deployfile="C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\sda\META-INF\portalapp-dd.xml">
+<component vendor="ecc.kz"
+           name="mf/forum/admui/app"
+           location="MSD_ecc_D"
+           counter="20180816100151"
+           scvendor="ecc.kz"
+           scname="FORUM"/>
+<fileset dir="C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54\sda">
+<exclude name="**/%*%"/>
+<exclude name="**/.#*"/>
+<exclude name="**/.svn/**"/>
+<exclude name="**/#*#"/>
+<exclude name="**/._*"/>
+<exclude name="**/*~"/>
+<exclude name="**/SCCS/**"/>
+<exclude name="**/vssver.scc"/>
+<exclude name="**/CVS/**"/>
+<exclude name="**/.cvsignore"/>
+</fileset>
+<fileset dir="C:\Users\mesh\.dtc\0\t\B9A74FD483EDB52FAC6D0BF3A9932D54">
+<include name="kz.ecc.admui.app.par"/>
+<exclude name="**/%*%"/>
+<exclude name="**/.#*"/>
+<exclude name="**/.svn/**"/>
+<exclude name="**/#*#"/>
+<exclude name="**/._*"/>
+<exclude name="**/*~"/>
+<exclude name="**/SCCS/**"/>
+<exclude name="**/vssver.scc"/>
+<exclude name="**/CVS/**"/>
+<exclude name="**/.cvsignore"/>
+</fileset>
+</jarsap>
+<timer message="JarSAP finished in "/>
+</target>
+</project>

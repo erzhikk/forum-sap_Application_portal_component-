@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+   <application-config>
+		<property name="SharingReference" value="usermanagement, knowledgemanagement, landscape, htmlb, exportalJCOclient, exportal"/>
+  </application-config>
+<components>
+	<component name="Forum_moderator">
+		<component-config>
+        <property name="ClassName" value="kz.ecc.controller.ModeratorController"/>
+      	</component-config>
+      	<component-profile/>
+    </component>
+</components>
+<services/>
+</application>
